@@ -1,0 +1,14 @@
+<view >
+    <SearchBar id="SearchBar" addflag="{{addflag}}" addimg="{{addimg}}" bind:addhandle="addhandle" searchstr="{{searchstr}}" bind:searchList="searchList" bind:endsearchList="endsearchList" bind:cancelsearch="cancelsearch" bind:activity_clear="activity_clear">
+    </SearchBar>
+</view>
+
+<view style="height:60rpx"></view>
+
+<swiper class='second-swiper-block' autoplay='true' circular='true' previous-margin='90rpx' next-margin='90rpx' current='0' bindchange='secondSwiperChange'>
+    <block wx:key='img' wx:for='{{secondSwiperData}}'>
+      <swiper-item class='second-swiper-item'>
+        <image mode='aspectFill' src='{{item}}' class='second-slide-image {{secondSwiperIndex == index ? "second-active" : ""}}' />
+      </swiper-item>
+    </block>
+  </swiper>

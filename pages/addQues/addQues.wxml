@@ -1,0 +1,39 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view>题目</view>
+    <input name="title" placeholder="题目" />
+  </view>
+  
+  <view class="section">
+    <view class="section__title">A</view>
+    <input class="input_test" name="answerA" placeholder="请填入A选项" />
+  </view>
+  
+  
+  <view class="section">
+    <view class="section__title">B</view>
+    <input name="answerB" placeholder="请填入B选项" />
+  </view>
+  
+  <view class="section">
+    <view class="section__title">C</view>
+    <input name="answerC" placeholder="请填入C选项" />
+  </view>
+  
+  <view class="section">
+    <view class="section__title">D</view>
+    <input name="answerD" placeholder="请填入D选项" />
+  </view>
+    <view class="section section_gap">
+    <view class="section__title">答案</view>
+    <radio-group name="answer">
+      <label><radio value="A"/>A</label>
+      <label><radio value="B"/>B</label>
+      <label><radio value="C"/>C</label>
+      <label><radio value="D"/>D</label>
+    </radio-group>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+  </view>
+</form>

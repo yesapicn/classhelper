@@ -1,0 +1,34 @@
+<scroll-view class="container"
+             style="height:{{systemInfo.windowHeight}}px; display: {{loading.isViewHidden ? 'none' : 'block'}}"
+             scroll-y="true" lower-threshold="300" bindscrolltolower="loadMoreGoods">
+
+    <view class="index-goods-list">
+        <block wx:for-items="{{goodsData}}">
+            <block wx:if="{{item.id}}">
+                <view class="index-goods-item" data-id="{{item.id}}" bindtap="showGoodsDetailPage">
+
+                    <view data-id="{{item.id}}" bindtap="showGoodsDetailPage" class="index-goods-img-view">
+                        <image src="../../../resource/images/scnu.png" mode="aspectFit" class="index-goods-img"></image>
+                    </view>
+
+                    <view class="index-goods-text-view">
+                        <text class="index-goods-title">{{prefix}}{{item.id}}.{{item.goods_title}}</text>
+                        
+                    </view>
+                </view>
+            </block>
+        </block>
+    </view>
+
+    <view class="downline">
+        <text>————我也是有底线的————</text>
+    </view>
+
+    <loading hidden="{{loading.hidden}}">{{loading.msg}}</loading>
+    <toast hidden="{{toast.hidden}}" icon="{{toast.icon}}" duration="3000" bindchange="toastChange">{{toast.msg}}
+    </toast>
+
+</scroll-view>
+<!-- loading -->
+<loading hidden="{{loading.hidden}}">{{loading.msg}}</loading>
+<toast hidden="{{toast.hidden}}" icon="{{toast.icon}}" duration="3000" bindchange="toastChange">{{toast.msg}}</toast>

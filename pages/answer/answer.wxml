@@ -1,0 +1,11 @@
+<!--pages/shici/shici.wxml-->
+<view classs="container">
+  <view class="shici-title">{{prefix}}{{showIndex}}. {{question.title}}</view>
+  
+  <view class="shici-content">
+    <button  wx:for="{{answers}}" bindtap='handleClick' data-id="{{item.id}}" data-answer="{{item.answer}}" type="{{item.resultFlag?item.answerType:default}}"  data-at="{{item.answerType}}"  wx:for-item="item" wx:key="key"  >
+      {{item.answer}}
+    </button>
+  </view>
+
+</view>

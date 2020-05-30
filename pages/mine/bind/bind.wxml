@@ -1,0 +1,18 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section section_gap">
+    <view class="section__title">我是老师</view>
+    <switch name="switch"/>
+  </view>
+  <view class="section">
+    <view class="section__title">姓名</view>
+    <input name="username" placeholder="请输入姓名" />
+  </view>
+  
+  <view class="section">
+    <view class="section__title">学号</view>
+    <input name="schoolNumber" placeholder="请输入学号（老师不用填入）" />
+  </view>
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+  </view>
+</form>

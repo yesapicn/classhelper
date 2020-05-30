@@ -1,0 +1,16 @@
+.section__title{
+  margin-top: 10px;
+}
+
+input{
+  border:3px solid #3879d9;
+  border-radius:5px; 
+}
+
+radio{
+  margin-left: 5px
+}
+
+.btn-area{
+  margin-top: 10px
+}

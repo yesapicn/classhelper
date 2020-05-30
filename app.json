@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/addQues/addQues",
+    "pages/answer/answer",
+    "pages/mine/bind/bind",
+    "pages/mine/collect/collect",
+    "pages/mine/collect/collectDetail/collectDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "课堂帮",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#49b5f6",
+    "color": "#dbdcdc",
+    "selectedColor": "#f1e63b",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "resource/images/ic_tabbar_normal2.png",
+        "selectedIconPath": "resource/images/ic_tabbar_selected2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我",
+        "iconPath": "resource/images/ic_tabbar_normal4.png",
+        "selectedIconPath": "resource/images/ic_tabbar_selected4.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 5000
+  },
+  "sitemapLocation": "sitemap.json",
+    "permission": {
+      "scope.userLocation": {
+        "desc": "需要记录打卡时的位置信息"
+      }
+    }
+}

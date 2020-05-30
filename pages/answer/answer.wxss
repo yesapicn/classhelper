@@ -1,0 +1,35 @@
+/* pages/shici/shici.wxss */
+
+.shici-title{
+  top:0px;
+  width: 100%;
+  min-height: 50px;
+  text-align: center;
+  border: 1px solid #49b5f6;
+  background-color: #49b5f6;
+  font-size: 18px;
+  color: #FFFFFF;
+  word-wrap:break-word;
+  word-break:normal; 
+}
+
+.shici-content{
+  margin-top: 80px;
+  /* text-align: center; */
+}
+.shici-content button{
+  margin-bottom: 10px;
+  width: 80%;
+}
+.shici-result{
+  margin-top: 20px;
+  width: 100%;
+  /* text-align: center; */
+}
+
+.re-answer{
+  border: 1px solid #49b5f6;
+  margin-top: 80px;
+  width: 60%;
+  color: red;
+}
